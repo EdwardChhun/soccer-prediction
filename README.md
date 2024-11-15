@@ -59,15 +59,25 @@ model = YOLO('yolo11s.pt')
 
 # Training.
 results = model.train(
-   data=r'D:\Developer\soccer-prediction\Human-Detection-3\data.yaml',
+   data=r'D:\Developer\soccer-prediction\Human-Detection-3\data.yaml', # Path to your data.yaml file
    imgsz=640,
    epochs=20,
    batch=8,
    save=True,
-   device = "cpu",
+   device = "cpu", # Change to CUDA if you have CUDA Toolkit
    pretrained = True,
-   name='soccer_detection')
+   project = r'D:\Developer\soccer-prediction', # Path to your working directory
+   name='soccer_prediction')
 ```
+
+# 7. Now run your model, go to image_inference.py and video_inference.py and test out the different images in assets/ folder, see the difference. 
+
+Yolo Predict [Documentation](https://docs.ultralytics.com/modes/predict/#inference-arguments)
+
+![image6](assets/low_res.jpeg)
+
+![image6_CV](images/Screenshot_6.png)
+
 
 
 
