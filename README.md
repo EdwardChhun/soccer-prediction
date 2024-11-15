@@ -47,13 +47,6 @@ python download.py
 from ultralytics import YOLO
 
 
-model = YOLO('yolov11.pt')
-
-
-# Training.
-from ultralytics import YOLO
-
-
 model = YOLO('yolo11s.pt')
 
 
