@@ -1,0 +1,13 @@
+train: ./train/images
+val: ./valid/images
+test: ./test/images
+
+nc: 2
+names: ['football', 'player']
+
+roboflow:
+  workspace: school-95f9t
+  project: human-detection-uerkn
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/school-95f9t/human-detection-uerkn/dataset/3
